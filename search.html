@@ -20,7 +20,7 @@
       event.preventDefault();
       const word = document.getElementById('word').value.trim();
       if (word) {
-        const response = await fetch(`https://yourDomainName2.xyz/api/definitions/?word=${encodeURIComponent(word)}`);
+        const response = await fetch(`https://lab4-203038697356.us-central1.run.app/api/definitions/?word=${encodeURIComponent(word)}`);
         const result = await response.json();
         document.getElementById('response').textContent = result.message;
       } else {
